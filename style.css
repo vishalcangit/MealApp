@@ -1,36 +1,47 @@
+/* design for scrollbar */
 ::-webkit-scrollbar {
     width: 13px;
     height: 13px;
-  }
-  ::-webkit-scrollbar-button {
+}
+
+::-webkit-scrollbar-button {
     width: 0px;
     height: 0px;
-  }
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: #e1e1e1;
     border: 0px none #ffffff;
     border-radius: 50px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+::-webkit-scrollbar-thumb:hover {
     background: #ffffff;
-  }
-  ::-webkit-scrollbar-thumb:active {
+}
+
+::-webkit-scrollbar-thumb:active {
     background: #000000;
-  }
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background: #666666;
     border: 0px none #ffffff;
     border-radius: 50px;
-  }
-  ::-webkit-scrollbar-track:hover {
+}
+
+::-webkit-scrollbar-track:hover {
     background: #666666;
-  }
-  ::-webkit-scrollbar-track:active {
+}
+
+::-webkit-scrollbar-track:active {
     background: #333333;
-  }
-  ::-webkit-scrollbar-corner {
+}
+
+::-webkit-scrollbar-corner {
     background: transparent;
-  }
+}
+
+/* design for scrollbar */
 * {
     margin: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -59,7 +70,7 @@ body {
     display: flex;
     margin-top: 2%;
 }
-
+/* search bar styles */
 .search-bar_container {
     width: 70vw;
     height: fit-content;
@@ -107,13 +118,14 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+    transform: scale(1.3);
 }
 
 #search-result-info {
     margin-top: 2%;
     text-align: center;
 }
-
+/* meal container styles */
 #meals {
     overflow: hidden;
     width: 70vw;
@@ -134,26 +146,22 @@ body {
 
 .meal-name:hover {
     cursor: pointer;
-    color: antiquewhite;
+    color: gray;
+    transform: scale(1.2);
 }
 
 #meals .meal img {
     width: 90%;
     height: 80%;
 }
-
-.add-fav:hover {
-    color: white;
-}
-
-
+/* single meal container styles */
 #single-meal {
     overflow: scroll;
     overflow-x: hidden;
     position: absolute;
-    top: 15%;
+    top: 4%;
     width: 80vw;
-    height: 80vh;
+    height: 90vh;
     margin-left: 10%;
     margin-bottom: 2%;
     background: rgb(34, 193, 195);
@@ -218,16 +226,7 @@ body {
 .meal_ins_ing p {
     text-align: justify;
 }
-
-
-
-
-
-
-
-
-
-
+/* favourites styles */
 aside {
     display: inline-block;
     width: 25%;
@@ -253,12 +252,15 @@ aside {
 .close-btn:hover {
     color: gray;
     cursor: pointer;
+    transform: scale(1.3);
 }
-.fav:hover{
+
+.fav:hover {
     color: gray;
     cursor: pointer;
 }
-.fav-container{
+
+.fav-container {
     width: 95%;
     height: 5rem;
     margin: 10px;
@@ -268,12 +270,15 @@ aside {
     border: 1px solid black;
     border-radius: 10px;
 }
-.fav-container img{
+
+.fav-container img {
     width: 5rem;
     height: 4rem;
 }
-.del-fav:hover{
+
+.del-fav:hover {
     color: red;
     font-size: 1.5rem;
     cursor: pointer;
 }
+/* styles ends here */

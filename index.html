@@ -6,45 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meal App</title>
+    <!-- font awesome link used to access fonts -->
     <script src="https://kit.fontawesome.com/3974936aac.js" crossorigin="anonymous"></script>
+    <!-- css style sheet imported -->
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- the onload initialize function will keep up with the locak storage to get the array 
+    of meals in the fvourites section to show instead of hard refresh -->
+
 <body onload="initialize()">
+    <!-- container containe the search bar,favourites and the search results of meals -->
     <div class="container">
+        <!-- left side is distinguished to bring the two different parallel parts together in flex -->
         <div class="left-side">
+            <!-- this div contains the search bar code -->
             <div class="search-bar_container">
+                <!-- its a submit btn for search -->
                 <form action="" id="submit">
                     <input id="search-bar" type="text" placeholder="Search meal...">
                     <button id="search-btn" type="submit">
                         <i class="fas fa-search"></i>
                     </button>
                 </form>
-                <button id="show-fav"  onclick="showFav()">Show Favourites</button>
+                <!-- the button which wiss show the favourite list -->
+                <button id="show-fav" onclick="showFav()">Show Favourites</button>
             </div>
+            <!-- this div will carry the statemen that "Search results for xyzzz item is ..." -->
             <div id="search-result-info"></div>
+            <!-- thhis will results in showing the searched meals in a flex maintained manner -->
             <div id="meals" class="meals-container"></div>
         </div>
-
-
+        <!-- this aside section will hold favourite list as said -->
         <aside id="aside" class="inactive">
+            <!-- this div contains the heading and the close button which will hide the favourite list -->
             <div class="fav_header">
                 <h1>Favourites list</h1>
                 <div class="close-btn" onclick="closeFav()">
                     <i class="fa fa-window-close" aria-hidden="true"></i>
                 </div>
             </div>
+            <!-- this fav list will be updated from javascript and it will contain all the favourite items in it -->
             <div id="fav-list"></div>
         </aside>
-
-
     </div>
-    <div id="single-meal" class="inactive">
+    <!-- this div will open up an popup of an meal with info  when clicked onto the meal name -->
+    <div id="single-meal" class="inactive"></div>
 
-    </div>
-
-
-    <!-- javascript file -->
+    <!-- javascript imported -->
     <script src="script.js"></script>
 </body>
 
