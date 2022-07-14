@@ -5,7 +5,7 @@ const mealsContainer = document.getElementById("meals");
 const resultHeading = document.getElementById("search-result-info");
 const single_meal_el = document.getElementById("single-meal");
 const favList = document.getElementById("fav-list");
-const body = document.querySelector("body");
+// const body = document.querySelector("body");
 let meals = [];
 
 // searchh meal fn
@@ -164,7 +164,7 @@ function deleteFav(e) {
     mealInfo.remove();
 }
 
-body.addEventListener(onload, function () {
+function initialize() {
     const mealsData = JSON.parse(window.localStorage.getItem('meal'));
 
     meals = [...mealsData];
@@ -182,7 +182,7 @@ body.addEventListener(onload, function () {
             `;
         favList.appendChild(div);
     }
-});
+};
 
 
 // events listeners
