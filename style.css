@@ -17,7 +17,8 @@ body {
     background: rgb(238, 174, 202);
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 16%, rgba(148, 187, 233, 1) 76%);
 }
-.inactive{
+
+.inactive {
     visibility: hidden;
 }
 
@@ -89,7 +90,6 @@ body {
 }
 
 .meal {
-    position: relative;
     width: 20vw;
     height: 30vh;
     margin: 12px;
@@ -118,55 +118,70 @@ body {
     overflow: scroll;
     position: absolute;
     top: 15%;
-    width: 70vw;
+    width: 80vw;
     height: 80vh;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-bottom: 2%;
     background: rgb(34, 193, 195);
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-.single-meal-box{
+
+.single-meal-box {
+    position: absolute;
     display: flex;
 }
-.box-close-btn{
+
+.box-close-btn {
     font-size: 2rem;
     position: absolute;
     top: 1%;
     left: 95%;
 }
-.box-close-btn:hover{
+
+.box-close-btn:hover {
+    transform: scale();
     cursor: pointer;
     color: gray;
 }
-.meal-name_img{
+
+.meal-name_img {
     margin-top: 10px;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .single-meal-box img {
     width: 30vw;
     height: 60vh;
 }
-.meal_ins_ing{
+
+.meal_ins_ing {
     margin: 20px;
     display: flex;
     flex-direction: column;
 }
-.meal_ins_ing ul{
-    margin-left: -10%;
+
+.meal_ins_ing ul {
+    margin-left: -5%;
 }
-.meal_ins_ing li{
+
+.meal_ins_ing li {
     list-style: none;
     display: inline;
     text-align: justify;
+    font-style: italic;
+    font-size: 0.9rem;
 }
-.meal_ins_ing h2{
+
+.meal_ins_ing h2 {
     text-align: center;
 }
-.meal_ins_ing p{
+
+.meal_ins_ing p {
     text-align: justify;
 }
 
@@ -203,5 +218,28 @@ aside {
 
 .close-btn:hover {
     color: gray;
+    cursor: pointer;
+}
+.fav:hover{
+    color: gray;
+    cursor: pointer;
+}
+.fav-container{
+    width: 95%;
+    height: 5rem;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.fav-container img{
+    width: 5rem;
+    height: 4rem;
+}
+.del-fav:hover{
+    color: red;
+    font-size: 1.5rem;
     cursor: pointer;
 }
