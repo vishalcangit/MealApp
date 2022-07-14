@@ -130,8 +130,10 @@ body {
     display: flex;
 }
 .box-close-btn{
-    font-size: 1.5rem;
-    margin-left: 96%;
+    font-size: 2rem;
+    position: absolute;
+    top: 1%;
+    left: 95%;
 }
 .box-close-btn:hover{
     cursor: pointer;

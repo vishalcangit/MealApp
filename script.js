@@ -12,6 +12,7 @@ function searchMeal(e) {
 
     // clear previous search
     single_meal_el.innerHTML = "";
+    mealsContainer.innerHTML = "";
 
     // get search meal results
     const searchValue = search_bar.value;
@@ -72,7 +73,9 @@ function addMealToDOM(meal) {
         }
     }
     single_meal_el.innerHTML = `
+    
     <div class="single-meal-box">
+        <i class="fa fa-window-close box-close-btn" onclick="closeBox()"></i>
         <div class="meal-name_img">
             <h1>${meal.strMeal}</h1>
             <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
