@@ -12,23 +12,40 @@
 
 <body>
     <div class="container">
-        <h1>Meal App</h1>
-        <div class="search-bar_container flex">
-            <form action="" class="flex" id="submit">
-                <input id="search-bar" type="text" placeholder="Search meal...">
-                <button id="search-btn" type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-            <button id="show-fav">Favourites</button>
+        <div class="left-side">
+            <div class="search-bar_container">
+                <form action="" id="submit">
+                    <input id="search-bar" type="text" placeholder="Search meal...">
+                    <button id="search-btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <button id="show-fav">Favourites</button>
+            </div>
+            <div id="search-result-info"></div>
+            <div id="meals" class="meals-container"></div>
         </div>
 
 
-        <div id="result-info"></div>
-        <div id="meals" class="meals"></div>
-        <div id="single-meal"></div>
+        <aside>
+            <div class="fav_header">
+                <h1>Favourites list</h1>
+                <div class="close-btn">
+                    <i class="fa fa-window-close" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div id="favDiv"></div>
+        </aside>
+
+
+    </div>
+    <div id="single-meal" class="inactive">
+        <i class="fa fa-window-close box-close-btn" onclick="closeBox()"></i>
     </div>
 
+
+    <!-- javascript file -->
+    <script src="script.js"></script>
 </body>
 
 </html>
